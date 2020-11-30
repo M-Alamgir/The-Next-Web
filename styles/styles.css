@@ -28,14 +28,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 3rem;
+}
+
+.header__sub {
+    display: flex;
+    width: 50rem;
+    align-items: center;
 }
 
 .header__one-left {
-    height: 3rem;
-    display: flex;
-    width: 50rem;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+}
+
+.header__one-right {
+    justify-content: end;
+}
+
+.header__one-left li {
+    margin-left: 2rem;
+}
+
+.header__one-right li {
+    margin-right: 2rem;
 }
 
 .header__two {
