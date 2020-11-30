@@ -128,29 +128,44 @@ header a:hover {
 .grid {
   display: grid;
 }
-.grid_0 {
-  grid-template-columns: 60% 40%;
-  margin: 7px 0;
-  padding: 1rem;
-  height: 40rem;
-}
 
-.grid__1,
-.grid_2 {
-  height: auto;
+.grid_0 {
+  grid-template-columns: 65% 35%;
+  column-gap: 1rem;
+  padding: 1.2rem;
 }
 
 .grid__1 {
-    width: 100%;
-   background-image: url("../images/amazon.jpg");
+  width: inherit;
+  background-image: url("../images/amazon.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 53rem;
+  background-color: gray;
 }
-.grid__21,.grid__22 {
-    width: 100%;
+
+.grid__21 {
+  margin-bottom: 1rem;
+}
+
+.grid__21,
+.grid__22 {
+  width: 100%;
   background-image: url("../images/maserati.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 26rem;
 }
+
+.grid__21 {
+  background-image: url("../images/lense.png")
+}
+
 @media (max-width: 768px) {
+
   .display__none {
     display: none;
   }
@@ -172,3 +187,29 @@ header a:hover {
 }
 
 /* header section ends here */
+
+/* Latest news */
+
+.center {
+  margin: 0 auto;
+  width: 100rem;
+}
+
+.latest__new-list {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  width: 100rem;
+}
+
+.latest_news-img {
+  width: 25rem;
+  height: 14rem;
+}
+
+.lastest__news-title {
+  font-size: 2.4rem;
+  color: #f42;
+  margin-bottom: 1.3rem;
+}
+
+/* Latest news ends here */
