@@ -1,0 +1,48 @@
+/* global reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* header section */
+
+.header__one {
+    width: 100%;
+    height: 3rem;
+    background-color: #000;
+}
+
+.header__one-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__one-left {
+    height: 3rem;
+    display: flex;
+    width: 50rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__two {
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    box-shadow: .7rem 0 1rem rgba(0, 0, 0, .2);
+}
+
+/* header section ends here */
