@@ -14,7 +14,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* header section */
@@ -25,11 +25,15 @@ body {
   background-color: #000;
 }
 
+header a:hover {
+  color: black;
+}
+
 .header__one-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 3rem;
+  justify-content: space-between;
 }
 
 .header__sub {
@@ -69,34 +73,102 @@ body {
   font-size: 1.2rem;
 }
 
+.header__one a:hover {
+  color: #fff;
+}
+
+.active {
+  color: #fff !important;
+}
+
 .header__two-left {
   justify-content: start;
 }
 
 .header__two-left li {
-    margin-left: 2rem;
-    list-style: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-transform: uppercase;
+  margin-left: 2rem;
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
+.icon-1,
 .header__two a {
-    text-decoration: none;
-    color: rgb(161, 161, 161);
+  text-decoration: none;
+  color: rgb(161, 161, 161);
 }
 
 .header__two-right {
-    margin-right: 2rem;
-}
-
-.header__two-right a {
-    padding: 2rem 0rem 1.6rem 1.6rem;
-    border-left: 1px solid rgb(228, 228, 228);
+  margin-right: 2rem;
 }
 
 .icon {
- font-size: 1.8rem;
+  font-size: 1.8rem;
+  padding: 2rem 0rem 1.6rem 1.6rem;
+  border-left: 1px solid rgb(228, 228, 228);
+}
+
+.header__three {
+  display: none;
+}
+
+.header__three-right {
+  margin-right: 2rem;
+}
+
+.icon-1 {
+  padding: 2rem 1.6rem 1.6rem 1.6rem;
+}
+
+.icon-1 a {
+  color: #f42 !important;
+}
+
+.grid {
+  display: grid;
+}
+.grid_0 {
+  grid-template-columns: 60% 40%;
+  margin: 7px 0;
+  padding: 1rem;
+  height: 40rem;
+}
+
+.grid__1,
+.grid_2 {
+  height: auto;
+}
+
+.grid__1 {
+    width: 100%;
+   background-image: url("../images/amazon.jpg");
+  background-repeat: no-repeat;
+}
+.grid__21,.grid__22 {
+    width: 100%;
+  background-image: url("../images/maserati.jpg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .display__none {
+    display: none;
+  }
+
+  .header__three-right {
+    margin-right: 2rem;
+  }
+
+  .header__three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.7rem 0 1rem rgba(0, 0, 0, 0.2);
+  }
+
+  .header__three img {
+    height: 5rem;
+  }
 }
 
 /* header section ends here */
