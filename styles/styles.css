@@ -199,7 +199,7 @@ header a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1rem;
   width: 100rem;
-}
+  }
 
 .latest_news-img {
   width: 25rem;
@@ -212,4 +212,67 @@ header a:hover {
   margin-bottom: 1.3rem;
 }
 
+.latest_p{
+
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.bottom_txt{
+    font-weight: 500;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.bottom_txt a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.latest_p:hover{
+color: red;
+}
+
+.items{
+    margin: 15px 0; 
+}
 /* Latest news ends here */
+
+/* Latest funds section */
+
+.head_fund{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fund_c{
+    height: 10rem;
+    width: 50rem;
+}
+
+.red{
+    height: 5rem;
+    background-color: red;
+    text-align: center;
+}
+
+.pink{
+    height: 5rem;
+    background-color: rosybrown;
+    text-align: center;
+}
+
+.img_float{
+ width: 5rem;
+ height: 5rem;
+ position: absolute;
+ margin-top: 25px;
+}
+
+.latest_fund_c{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
