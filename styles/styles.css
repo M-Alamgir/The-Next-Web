@@ -105,7 +105,7 @@ header a:hover {
 
 .icon {
   font-size: 1.8rem;
-  padding: 2rem 0rem 1.6rem 1.6rem;
+  padding: 1.6rem 0rem 1.6rem 1.6rem;
   border-left: 1px solid rgb(228, 228, 228);
 }
 
@@ -161,11 +161,10 @@ header a:hover {
 }
 
 .grid__21 {
-  background-image: url("../images/lense.png")
+  background-image: url("../images/lense.png");
 }
 
 @media (max-width: 768px) {
-
   .display__none {
     display: none;
   }
@@ -213,3 +212,202 @@ header a:hover {
 }
 
 /* Latest news ends here */
+
+/* card section */
+
+.row {
+  margin-bottom: 7rem;
+}
+
+.card__container {
+  margin-top: 5rem;
+  width: 113.8rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.card__title {
+  color: #f42;
+  font-size: 2.4rem;
+  margin-bottom: 1.7rem;
+  font-weight: bold;
+}
+
+.card__body-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__body-img-1 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/stocks.jpg");
+}
+
+.card__body-img-2 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/chat.jpg");
+}
+
+.card__body-img-3 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/house.png");
+}
+
+.card__body-img-4 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/city.jpg");
+}
+
+.card__body-img-5 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/painters.jpg");
+}
+
+.card__body-img-6 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/google.png");
+}
+
+.card__body-img-7 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/doctor.jpg");
+}
+
+.card__body-img-8 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/man.jpg");
+}
+
+.card__body-img-9 {
+  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/bridge.jpg");
+}
+
+.card__body-sub {
+  position: relative;
+  height: 26.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__body-text {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.5rem;
+  width: 90%;
+}
+
+.card__body-text-1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.card__body-text-2 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin-bottom: 0.7rem;
+}
+
+.card__body-text-3 {
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card__latest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.card__latest-1 {
+  color: #f42;
+  width: 27rem;
+}
+
+.card__latest-1 * {
+  margin-left: 1rem;
+  width: 25rem;
+}
+
+.card__latest-1 h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.card__latest-1 p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card__latest-img {
+  height: 9.6rem;
+  width: 9.6rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__latest-img-1 {
+  background-image: url("../images/elon.jpg");
+}
+
+.card__latest-img-2 {
+  background-image: url("../images/fir.jpg");
+}
+
+.card__latest-img-3 {
+  background-image: url("../images/device.png");
+}
+
+.card__latest-img-4 {
+  background-image: url("../images/maserati.jpg");
+}
+
+.card__latest-img-5 {
+  background-image: url("../images/cards.png");
+}
+
+.card__latest-img-6 {
+  background-image: url("../images/lab.png");
+}
+
+.card__latest-img-7 {
+  background-image: url("../images/money.png");
+}
+
+.card__latest-img-8 {
+  background-image: url("../images/prime.jpg");
+}
+
+.card__latest-img-9 {
+  background-image: url("../images/us.jpg");
+}
+
+.card__links li {
+  list-style: none;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.card__links li::before {
+  content: "\002022  ";
+  font-size: 2em;
+  color: #f42;
+  margin-right: 0.7rem;
+}
+
+.card__links a {
+  color: #777;
+  text-decoration: none;
+}
+
+.card__links a:hover {
+  color: #333;
+}
+
+
+/* card section ends here */
