@@ -638,8 +638,14 @@ section a {
   color: #f42;
 }
 
+.items {
+  position: relative;
+}
+
 .overlay_deals {
   position: absolute;
+  top: 0;
+  right: 0.4rem;
   background-image: url("../images/deals-ribbon.svg");
   background-repeat: no-repeat;
   background-size: cover;
