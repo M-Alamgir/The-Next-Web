@@ -267,11 +267,11 @@ header a:hover {
 .latest__new-list {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1.45rem;
-  width: 100%;
+  width: 113.8rem;
 }
 
 .latest_news-img {
-  width: 100%;
+  width: 27.3rem;
   height: auto;
 }
 
@@ -563,7 +563,7 @@ header a:hover {
 
 .latest_fund_c {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 2rem;
+  column-gap: 1.45rem;
 }
 
 .p-right {
@@ -581,10 +581,6 @@ header a:hover {
 .head_fund a:hover,
 .head_fund h2:hover {
   color: #000;
-}
-
-.head_fund a {
-  margin: 0 15px;
 }
 
 .first_right {
