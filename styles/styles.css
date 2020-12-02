@@ -142,7 +142,6 @@ header a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  object-fit: cover;
   height: 53rem;
   background-color: gray;
 }
@@ -550,7 +549,8 @@ header a:hover {
   text-decoration: none;
 }
 
-.head_fund a:hover, .head_fund h2:hover {
+.head_fund a:hover,
+.head_fund h2:hover {
   color: #000;
 }
 
@@ -564,11 +564,11 @@ header a:hover {
 }
 
 .latest_funding {
-  margin-top:6rem;
+  margin-top: 6rem;
 }
 
 .red h4 {
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   font-size: 24px;
   line-height: 1;
   font-weight: 800;
@@ -582,10 +582,10 @@ header a:hover {
 }
 
 .pink h5 {
-	font-family: 'Abel', sans-serif;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: .04em;
+  font-family: "Abel", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   line-height: 1.5;
   font-size: 12px;
 }
@@ -596,7 +596,7 @@ header a:hover {
 
 .items_fund p {
   font-size: 13px;
-  color: #333;
+  color: #555;
   display: block;
   line-height: 22px;
 }
@@ -605,7 +605,7 @@ header a:hover {
   padding: 0 15px;
 }
 
-.last_p{
+.last_p {
   border-top: 1px solid rgba(255, 67, 34, 0.252);
   padding: 1.3rem;
   margin-top: 1.3rem;
@@ -624,6 +624,10 @@ section a {
 
 .latest_deals-img {
   width: 27rem;
+
+.latest_deals-img {
+  width: 25rem;
+
   height: 20rem;
 }
 
@@ -633,6 +637,7 @@ section a {
   align-items: center;
 }
 
+
 .lastest__more_deals {
   font-size: 1.4rem;
   color: #f42;
@@ -640,12 +645,19 @@ section a {
 
 .items {
   position: relative;
+
+.lastest__more_deals{
+font-size: 1.4rem;
+color: #f42;
+
 }
 
 .overlay_deals {
   position: absolute;
+
   top: 0;
   right: 0.4rem;
+
   background-image: url("../images/deals-ribbon.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -683,7 +695,9 @@ section a {
 .icones {
   background-color: #131313;
   width: 100%;
+
   height: 11rem;
+  height: 12rem;
 }
 
 .icones ul {
@@ -698,9 +712,14 @@ section a {
 
 .top_nav li {
   margin: 15px;
+
   padding: 15px 17px;
   background-color: #333;
   border-radius: 50%;
+  border: 1px solid rgba(129, 124, 124, 0);
+  padding: 15px;
+  background-color: #333;
+  border-radius: 60%;
   border: 1px solid rgba(129, 124, 124, 0);
 }
 
@@ -739,6 +758,11 @@ section a {
   padding: 2rem;
   color: #fff;
   font-size: 1.4rem;
+}
+
+
+.last_img img {
+  width: 7rem;
 }
 
 .last_img img {
