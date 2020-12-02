@@ -10,6 +10,12 @@ main {
   margin-top: 8rem;
 }
 
+.grid__1,
+.grid__21,
+.grid__22 {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .card__container {
     width: 100rem;
