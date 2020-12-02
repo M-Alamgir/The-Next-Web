@@ -48,7 +48,7 @@ header a:hover {
 
 .header__one-right {
   justify-content: end;
-  width: 50rem;
+  width: 26rem;
 }
 
 .header__one-left li {
@@ -138,7 +138,9 @@ header a:hover {
 .grid__1 {
   position: relative;
   width: inherit;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9)), linear-gradient(to right, rgba(255, 68, 34, .7), rgba(0, 0, 0, .6)), url("../images/mario.png");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
+    linear-gradient(to right, rgba(255, 68, 34, 0.7), rgba(0, 0, 0, 0.6)),
+    url("../images/mario.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -185,7 +187,8 @@ header a:hover {
 .grid__22 {
   position: relative;
   width: 100%;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9)), url("../images/maserati.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
+    url("../images/maserati.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -193,7 +196,8 @@ header a:hover {
 }
 
 .grid__21 {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .9)), url("../images/city-big.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
+    url("../images/city-big.jpg");
 }
 
 .sub-text {
@@ -218,7 +222,7 @@ header a:hover {
 
 .sub-date {
   color: #777;
-  font-size 1.3rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 768px) {
@@ -295,7 +299,7 @@ header a:hover {
 }
 
 .items {
-  margin: 15px 0; 
+  margin: 15px 0;
 }
 
 /* Latest news ends here */
@@ -320,16 +324,32 @@ header a:hover {
   font-weight: bold;
 }
 
-.card__body-img {
-  width: 100%;
-  height: 100%;
-}
-
-.card__body-img-1 {
+/* .card__body-img-1 {
   background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/stocks.jpg");
+} */
+
+.card__body-img {
+  position: relative;
 }
 
-.card__body-img-2 {
+.new_img {
+  width: 100%;
+  height: auto;
+}
+
+.new_img-over {
+  background: transparent url("../images/image-gradient.png");
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: .7;
+}
+
+/* .card__body-img-2 {
   background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/chat.jpg");
 }
 
@@ -359,11 +379,11 @@ header a:hover {
 
 .card__body-img-9 {
   background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/bridge.jpg");
-}
+} */
 
 .card__body-sub {
   position: relative;
-  height: 26.7rem;
+  height: auto;
   margin-bottom: 0.5rem;
 }
 
@@ -372,6 +392,7 @@ header a:hover {
   bottom: 1.2rem;
   left: 1.5rem;
   width: 90%;
+  z-index: 5;
 }
 
 .card__body-text-1 {
@@ -496,7 +517,6 @@ header a:hover {
   color: #333;
 }
 
-
 /* card section ends here */
 
 /* Latest funds section  starts here*/
@@ -505,8 +525,8 @@ header a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom:2rem;
-  font-size: 16px;  
+  margin-bottom: 2rem;
+  font-size: 16px;
 }
 
 .fund_c {
@@ -523,7 +543,7 @@ header a:hover {
 
 .pink {
   height: 5rem;
-  background-color: rgba(255,68,34,.08);
+  background-color: rgba(255, 68, 34, 0.08);
   text-align: center;
 }
 
@@ -545,12 +565,14 @@ header a:hover {
   cursor: pointer;
 }
 
-.head_fund p,.head_fund a {
+.head_fund p,
+.head_fund a {
   color: #f42;
   text-decoration: none;
 }
 
-.head_fund a:hover, .head_fund h2:hover {
+.head_fund a:hover,
+.head_fund h2:hover {
   color: #000;
 }
 
@@ -564,11 +586,11 @@ header a:hover {
 }
 
 .latest_funding {
-  margin-top:6rem;
+  margin-top: 6rem;
 }
 
 .red h4 {
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   font-size: 24px;
   line-height: 1;
   font-weight: 800;
@@ -582,10 +604,10 @@ header a:hover {
 }
 
 .pink h5 {
-	font-family: 'Abel', sans-serif;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: .04em;
+  font-family: "Abel", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   line-height: 1.5;
   font-size: 12px;
 }
@@ -605,7 +627,7 @@ header a:hover {
   padding: 0 15px;
 }
 
-.last_p{
+.last_p {
   border-top: 1px solid rgba(255, 67, 34, 0.252);
   padding: 1.3rem;
   margin-top: 1.3rem;
@@ -667,12 +689,11 @@ section a {
   margin-top: 35px;
 }
 
-.bottom_txtd a{
+.bottom_txtd a {
   font-weight: 600;
   color: #555;
   font-size: 1.2rem;
 }
-
 
 .bottom_txtd del {
   font-size: 1.1rem;

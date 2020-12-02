@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,6 +19,7 @@
 <body>
     <header>
         <div class="display__none">
+            <div class="header_img-l"></div>
             <div class="header__one ">
                 <nav class="header__one-nav">
                     <ul class="header__sub header__one-left">
@@ -40,7 +42,7 @@
             <div class="header__two header__sub ">
                 <ul class="header__two-left header__sub">
                     <li><a href="#">Latest</a></li>
-                    <li><a href="#">Hard Fork</a< /li>
+                    <li><a href="#">Hard Fork</a</li>
                     <li><a href="#">Plugged</a></li>
                     <li><a href="#">ReadMe</a></li>
                     <li><a href="#">Growth Quarters</a></li>
@@ -53,16 +55,18 @@
                 </div>
             </div>
         </div>
-        <div class="header__three header__sub">
-            <div class="header__three-icon">
-                <figure>
-                    <img src="./images/apple-touch-icon-72x72.png" alt="Main Icon">
-                </figure>
-            </div>
-
-            <div class="header__three-right header__sub">
-                <a href="#"> <i class="icon icon-1 fas fa-search"></i></a>
-                <a href="#"> <i class="icon icon-2 fas fa-bars"></i></a>
+        <div class="header__res">
+            <div class="header__three header__sub">
+                <div class="header__three-icon">
+                    <figure>
+                        <img src="./images/apple-touch-icon-72x72.png" alt="Main Icon">
+                    </figure>
+                </div>
+    
+                <div class="header__three-right header__sub">
+                    <a href="#"> <i class="icon icon-1 fas fa-search"></i></a>
+                    <a href="#"> <i class="icon icon-2 fas fa-bars"></i></a>
+                </div>
             </div>
         </div>
     </header>
@@ -257,11 +261,14 @@
 
         <section>
             <div class="card__container center grid row">
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Hard Fork ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-1 card__body-img"></div>
+                            <div class="card__body-img-1 card__body-img">
+                                <img class="new_img" src="images/stocks.jpg" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Square stock on fire: Jack Dorsey's beard sets 3 share price records in 3 days</p>
@@ -285,11 +292,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Apps ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-2 card__body-img"></div>
+                            <div class="card__body-img-2 card__body-img">
+                                <img class="new_img" src="images/chat.jpg" alt="chat">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">WhatsApp now lets you assign separate wallpapers for your favorite people</p>
@@ -315,11 +325,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Gear ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-3 card__body-img"></div>
+                            <div class="card__body-img-3 card__body-img">
+                                <img class="new_img" src="images/house.png" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Why AI is the future of home security</p>
@@ -343,15 +356,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="card__container center grid row">
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Tech ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-4 card__body-img"></div>
+                            <div class="card__body-img-4 card__body-img">
+                                <img class="new_img" src="images/city.jpg" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Boston’s Mayor has big plans for EVs in the city</p>
@@ -376,11 +389,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Creative ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-5 card__body-img"></div>
+                            <div class="card__body-img-5 card__body-img">
+                                <img class="new_img" src="images/painters.jpg" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Graphic design apps are now as fundamental as Excel — here's how non-designers get up to speed</p>
@@ -407,11 +423,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Podium ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-6 card__body-img"></div>
+                            <div class="card__body-img-6 card__body-img">
+                                <img class="new_img" src="images/google.png" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Google still abuses its search monopoly in the EU — regulators wake up!</p>
@@ -435,14 +454,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card__container center grid row">
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Insights ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-7 card__body-img"></div>
+                            <div class="card__body-img-7 card__body-img">
+                                <img class="new_img" src="images/doctor.jpg" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Maths has revealed how the COVID-19 vaccine should be distributed</p>
@@ -466,11 +486,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Launch ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-8 card__body-img"></div>
+                            <div class="card__body-img-8 card__body-img">
+                                <img class="new_img" src="images/man.jpg" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">I’ve fallen for the electric Hummer and I hate myself for it</p>
@@ -494,11 +517,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card mar-btm">
                     <h3 class="card__title">Distract ></h3>
                     <div class="card__body">
                         <div class="card__body-sub">
-                            <div class="card__body-img-9 card__body-img"></div>
+                            <div class="card__body-img-9 card__body-img">
+                                <img src="images/bridge.jpg" class="new_img" alt="stocks">
+                                <a href="#" class="new_img-over"></a>
+                            </div>
                             <div class="card__body-text">
                                 <p class="card__body-text-1">Most popular</p>
                                 <p class="card__body-text-2">Lucid has the most beautiful car configurator I've ever seen</p>
