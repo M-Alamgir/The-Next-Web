@@ -255,6 +255,11 @@ header a:hover {
   width: 113.8rem;
 }
 
+.center-card {
+  margin: 0 auto;
+  width: 100rem;
+}
+
 .latest__news {
   padding: 10rem 0 7rem 0;
 }
@@ -262,12 +267,12 @@ header a:hover {
 .latest__new-list {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1.45rem;
-  width: 113.8rem;
+  width: 100%;
 }
 
 .latest_news-img {
-  width: 27rem;
-  height: 14.12rem;
+  width: 100%;
+  height: auto;
 }
 
 .lastest__news-title {
@@ -296,10 +301,12 @@ header a:hover {
 
 .latest_p:hover {
   color: red;
+  text-decoration: underline;
 }
 
 .items {
   margin: 15px 0;
+  position: relative;
 }
 
 /* Latest news ends here */
@@ -591,9 +598,8 @@ header a:hover {
 
 .red h4 {
   font-family: Avalon, sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1;
-  font-weight: 800;
   color: #fff;
 }
 
@@ -632,6 +638,7 @@ header a:hover {
   padding: 1.3rem;
   margin-top: 1.3rem;
 }
+
 /* Latest Funding section Ends here */
 
 /* Latest deals */
@@ -644,9 +651,12 @@ section a {
   margin-bottom: 10rem;
 }
 
+.deals-img {
+  max-width: inherit;
+}
+
 .latest_deals-img {
-  width: 27rem;
-  height: 20rem;
+  max-width: 100%;
 }
 
 .deals_header {
@@ -660,14 +670,10 @@ section a {
   color: #f42;
 }
 
-.items {
-  position: relative;
-}
-
 .overlay_deals {
   position: absolute;
   top: 0;
-  right: 0.4rem;
+  right: 0;
   background-image: url("../images/deals-ribbon.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -704,16 +710,16 @@ section a {
 .icones {
   background-color: #131313;
   width: 100%;
-  height: 11rem;
+  height: 15rem;
+  padding-top: 20px;
 }
 
 .icones ul {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.icones ul {
+.icones li {
   list-style: none;
 }
 
@@ -751,13 +757,12 @@ section a {
 
 .bottomer {
   width: 100%;
-  height: 10rem;
   background-color: black;
 }
 
 .bottomer p {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
   color: #fff;
   font-size: 1.4rem;
 }
