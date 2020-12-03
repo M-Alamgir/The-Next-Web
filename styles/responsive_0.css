@@ -67,12 +67,6 @@
 }
 
 @media (max-width: 768px) {
-  .center {
-    width: 100%;
-  }
-
-  /* Global */
-
   .display__none {
     display: none;
   }
@@ -171,7 +165,7 @@
   .icones {
     height: 12rem;
   }
-  
+
   .top_nav li {
     margin: 5px;
     padding: 9px 11px;
@@ -192,5 +186,5 @@
 
   .first_right {
     font-size: 1.8rem;
-  }  
+  }
 }

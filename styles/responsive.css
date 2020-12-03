@@ -16,6 +16,10 @@ main {
   cursor: pointer;
 }
 
+.mar-btm {
+  margin-bottom: 5rem;
+}
+
 @media (max-width: 1200px) {
   .card__container {
     width: 100rem;
@@ -191,8 +195,4 @@ main {
     padding: 0 1.2rem;
     width: 100%;
   }
-}
-
-.mar-btm {
-  margin-bottom: 5rem;
 }
