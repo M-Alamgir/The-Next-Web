@@ -79,6 +79,27 @@ main {
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
+
+  .hidden {
+    display: block;
+  }
+
+  .logo__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8rem;
+    width: 10rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    padding: 1.7rem;
+  }
+
+  .header__two-left,
+  .header__one-left {
+    margin-left: 10rem
+  }
 }
 
 @media (max-width: 916px) {
@@ -168,7 +189,9 @@ main {
     margin-top: 6rem;
     grid-template-columns: 1fr;
     padding: 0 1.2rem;
+    width: 100%;
   }
+  
 }
 
 .mar-btm {

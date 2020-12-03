@@ -32,6 +32,10 @@ section a {
   padding: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .header__one {
   width: 100%;
   height: 3rem;
@@ -566,7 +570,7 @@ header a:hover {
 
 .first_right {
   margin-top: 10px;
-  font-size: larger;
+  font-size: 2.4rem;
 }
 
 .latest_funding {
