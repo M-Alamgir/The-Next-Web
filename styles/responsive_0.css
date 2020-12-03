@@ -67,16 +67,6 @@
 }
 
 @media (max-width: 768px) {
-  .latest__new-list {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-
-  .latest_news-img {
-    width: 100%;
-    height: auto;
-  }
-
   .center {
     width: 100%;
   }
@@ -117,6 +107,7 @@
 
   .latest_news-img {
     width: 19rem;
+    height: auto;
     padding: 0 2rem 0 0;
   }
 
@@ -152,49 +143,6 @@
     visibility: hidden;
   }
 
-  /* 
-  .first_right {
-    font-size: 3vw;
-  }
-
-  .latest_fund_c {
-    grid-template-columns: auto;
-  }
-
-  .items_fund {
-    margin: 10px auto;
-  }
-
-  .head_fund a {
-    margin: 0;
-    font-size: small;
-  }
-
-  .head_fund {
-    flex-direction: column;
-  }
-
-  .red {
-    text-align: unset;
-    padding: 15px 0 0 84px;
-  }
-
-  .pink {
-    text-align: unset;
-    height: 7rem;
-    padding: 12px 0 0 84px;
-  }
-
-  .pink p {
-    font-size: 15px;
-    padding: 5px;
-  }
-
-  .bottom_txt,
-  .bottom_txt a {
-    font-size: 1.2rem;
-  } */
-
   /* deals section */
 
   .latest__new-list {
@@ -223,6 +171,7 @@
   .icones {
     height: 12rem;
   }
+  
   .top_nav li {
     margin: 5px;
     padding: 9px 11px;
@@ -243,8 +192,5 @@
 
   .first_right {
     font-size: 1.8rem;
-  }
-  
+  }  
 }
-
-/* medium resolution devices */

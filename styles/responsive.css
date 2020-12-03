@@ -98,7 +98,7 @@ main {
 
   .header__two-left,
   .header__one-left {
-    margin-left: 10rem
+    margin-left: 10rem;
   }
 }
 
@@ -191,7 +191,6 @@ main {
     padding: 0 1.2rem;
     width: 100%;
   }
-  
 }
 
 .mar-btm {
