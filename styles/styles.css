@@ -188,7 +188,8 @@ header a:hover {
 .grid__1 {
   position: relative;
   width: inherit;
-  background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
+  background-image:
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
     linear-gradient(to right, rgba(255, 68, 34, 0.7), rgba(0, 0, 0, 0.6)),
     url("../images/mario.png");
   background-repeat: no-repeat;
@@ -233,7 +234,8 @@ header a:hover {
 .grid__22 {
   position: relative;
   width: 100%;
-  background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
+  background-image:
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
     url("../images/maserati.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,7 +245,8 @@ header a:hover {
 
 .grid__21 {
   margin-bottom: 1rem;
-  background-image:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
+  background-image:
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
     url("../images/city-big.jpg");
 }
 
