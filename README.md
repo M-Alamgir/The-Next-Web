@@ -2,7 +2,7 @@
 
 # The-Next-Web
 
-A clone of [TNW](https://raw.githack.com/ourandco/The-Next-Web/feature-branch-2/index.html)'s home page. The website is build using the modern `css`, `html` and media queries techniques to make it responsive.
+A clone of [TNW](https://ourandco.github.io/The-Next-Web/)'s home page. The website is build using the modern `css`, `html` and media queries techniques to make it responsive.
 
 The website is fully responsive with the help of two `media query` `breakpoints` namely: `< 768px`, `>= 768px`, `>= 1024px`.
 
@@ -16,7 +16,7 @@ The website is fully responsive with the help of two `media query` `breakpoints`
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/ourandco/The-Next-Web/feature-branch-2/index.html)
+[Live Demo Link](https://ourandco.github.io/The-Next-Web/)
 
 
 ## Getting Started
