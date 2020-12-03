@@ -4,7 +4,7 @@
 
 > This project is part of microverse program.
 
-![screenshot](./images/screenshoted.jpg)
+![screenshot of The-Next-Web](./images/screenshoted.jpg)
 
 
 ## Built With
