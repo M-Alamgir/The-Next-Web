@@ -4,7 +4,7 @@
 
 > This project is part of microverse program.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/screenshoted.jpg)
 
 
 ## Built With
@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/ourandco/The-Next-Web/feature-branch-2/index.html)
 
 
 ## Getting Started
@@ -28,15 +28,13 @@
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/ourandco)
-- Twitter: [@twitterhandle](https://twitter.com/Alphacrescent1)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@ourandco](https://github.com/ourandco)
+
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/sempermort)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@sempermort](https://github.com/sempermort)
+
 
 ## 🤝 Contributing
 

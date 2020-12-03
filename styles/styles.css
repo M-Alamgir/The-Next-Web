@@ -18,6 +18,19 @@ body {
 }
 
 /* header section */
+section a {
+  text-decoration: none;
+}
+
+.bottom_nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "abel", sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
 
 .header__one {
   width: 100%;
@@ -25,8 +38,61 @@ body {
   background-color: #000;
 }
 
+.header__one a {
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.icon-1,
+.header__two a {
+  text-decoration: none;
+  color: rgb(161, 161, 161);
+}
+
+.icon-1 a {
+  color: #f42 !important;
+}
+
+.bottom_txt a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.card__links a {
+  color: #777;
+  text-decoration: none;
+}
+
+.head_fund p,
+.head_fund a {
+  color: #f42;
+  text-decoration: none;
+}
+
+.bottom_txtd a {
+  font-weight: 600;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.top_nav a {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
 header a:hover {
   color: black;
+}
+
+.header__one a:hover {
+  color: #fff;
+}
+
+.card__links a:hover {
+  color: #333;
 }
 
 .header__one-nav {
@@ -67,16 +133,6 @@ header a:hover {
   justify-content: space-between;
 }
 
-.header__one a {
-  color: rgb(197, 197, 197);
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.header__one a:hover {
-  color: #fff;
-}
-
 .active {
   color: #fff !important;
 }
@@ -93,19 +149,13 @@ header a:hover {
   text-transform: uppercase;
 }
 
-.icon-1,
-.header__two a {
-  text-decoration: none;
-  color: rgb(161, 161, 161);
-}
-
 .header__two-right {
   margin-right: 2rem;
 }
 
 .icon {
   font-size: 1.8rem;
-  padding: 1.6rem 0rem 1.6rem 1.6rem;
+  padding: 1.6rem 0 1.6rem 1.6rem;
   border-left: 1px solid rgb(228, 228, 228);
 }
 
@@ -121,10 +171,6 @@ header a:hover {
   padding: 2rem 1.6rem 1.6rem 1.6rem;
 }
 
-.icon-1 a {
-  color: #f42 !important;
-}
-
 .grid {
   display: grid;
 }
@@ -138,9 +184,7 @@ header a:hover {
 .grid__1 {
   position: relative;
   width: inherit;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
-    linear-gradient(to right, rgba(255, 68, 34, 0.7), rgba(0, 0, 0, 0.6)),
-    url("../images/mario.png");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), linear-gradient(to right, rgba(255, 68, 34, 0.7), rgba(0, 0, 0, 0.6)), url("../images/mario.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -181,23 +225,18 @@ header a:hover {
 
 .grid__21 {
   margin-bottom: 1rem;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), url("../images/city-big.jpg");
 }
 
 .grid__21,
 .grid__22 {
   position: relative;
   width: 100%;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
-    url("../images/maserati.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), url("../images/maserati.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 26rem;
-}
-
-.grid__21 {
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
-    url("../images/city-big.jpg");
 }
 
 .sub-text {
@@ -292,13 +331,6 @@ header a:hover {
   font-size: 1rem;
 }
 
-.bottom_txt a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #aaa;
-  font-size: 1rem;
-}
-
 .latest_p:hover {
   color: red;
   text-decoration: underline;
@@ -331,10 +363,6 @@ header a:hover {
   font-weight: bold;
 }
 
-/* .card__body-img-1 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/stocks.jpg");
-} */
-
 .card__body-img {
   position: relative;
 }
@@ -353,40 +381,8 @@ header a:hover {
   top: 0;
   right: 0;
   z-index: 2;
-  opacity: .7;
+  opacity: 0.7;
 }
-
-/* .card__body-img-2 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/chat.jpg");
-}
-
-.card__body-img-3 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/house.png");
-}
-
-.card__body-img-4 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/city.jpg");
-}
-
-.card__body-img-5 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/painters.jpg");
-}
-
-.card__body-img-6 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/google.png");
-}
-
-.card__body-img-7 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/doctor.jpg");
-}
-
-.card__body-img-8 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/man.jpg");
-}
-
-.card__body-img-9 {
-  background-image: linear-gradient(to bottom, transparent , rgba(0, 0, 0, 0.9)), url("../images/bridge.jpg");
-} */
 
 .card__body-sub {
   position: relative;
@@ -515,18 +511,9 @@ header a:hover {
   margin-right: 0.7rem;
 }
 
-.card__links a {
-  color: #777;
-  text-decoration: none;
-}
-
-.card__links a:hover {
-  color: #333;
-}
-
 /* card section ends here */
 
-/* Latest funds section  starts here*/
+/* Latest funds section  starts here */
 
 .head_fund {
   display: flex;
@@ -570,12 +557,6 @@ header a:hover {
   color: #f42;
   font-weight: 800;
   cursor: pointer;
-}
-
-.head_fund p,
-.head_fund a {
-  color: #f42;
-  text-decoration: none;
 }
 
 .head_fund a:hover,
@@ -639,14 +620,6 @@ header a:hover {
 
 /* Latest deals */
 
-section a {
-  text-decoration: none;
-}
-
-.latest__deals {
-  margin-bottom: 10rem;
-}
-
 .deals-img {
   max-width: inherit;
 }
@@ -683,18 +656,12 @@ section a {
 .overlay_deals h3 {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  margin: 25px 0px 0px 30px;
+  margin: 25px 0 0 30px;
   font-weight: 900;
 }
 
 .latest__deals {
-  margin-top: 35px;
-}
-
-.bottom_txtd a {
-  font-weight: 600;
-  color: #555;
-  font-size: 1.2rem;
+  margin: 35px 10rem;
 }
 
 .bottom_txtd del {
@@ -730,21 +697,6 @@ section a {
 .top_nav li:hover {
   background-color: black;
   border: 1px solid rgba(129, 124, 124, 0.247);
-}
-
-.top_nav a {
-  font-size: 1.3rem;
-  color: #fff;
-}
-
-.bottom_nav a {
-  color: #fff;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  font-family: "abel", sans-serif;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
 }
 
 .bottomer img {
