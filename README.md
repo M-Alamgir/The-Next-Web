@@ -1,8 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# TheNextWeb
+# The-Next-Web
 
-> This project is part of microverse program.
+A clone of [TNW](https://raw.githack.com/ourandco/The-Next-Web/feature-branch-2/index.html)'s home page. The website is build using the modern `css`, `html` and media queries techniques to make it responsive.
+
+The website is fully responsive with the help of two `media query` `breakpoints` namely: `< 768px`, `>= 768px`, `>= 1024px`.
 
 ![screenshot of The-Next-Web](./images/screenshoted.jpg)
 
@@ -48,9 +50,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to [The Next Web](https://thenextweb.com/) for their awesome landing page.
+- Hat tip to Microverse for their `README` template.
 
 ## 📝 License
 
