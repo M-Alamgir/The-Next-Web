@@ -1,727 +1,740 @@
-/* global reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
 
-*,
-*::after,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
+* html {
+	font-size: 62.5%;
 }
 
-body {
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-/* header section */
-section a {
-  text-decoration: none;
-}
-
-.bottom_nav a {
-  color: #fff;
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  font-family: "abel", sans-serif;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
+* body {
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
 }
 
 .hidden {
-  display: none;
+	display: none;
+}
+
+.background-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.flex-spaced {
+	display: flex;
+	justify-content: space-between;
+}
+
+section a {
+	text-decoration: none;
+}
+
+.bottom_nav a {
+	color: #fff;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	font-family: "abel", sans-serif;
+	text-decoration: none;
+	margin: 10px;
+	padding: 10px;
+}
+
+.hidden {
+	display: none;
 }
 
 .header__one {
-  width: 100%;
-  height: 3rem;
-  background-color: #000;
+	width: 100%;
+	height: 3rem;
+	background-color: #000;
 }
 
 .header__one a {
-  color: rgb(197, 197, 197);
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-.icon-1,
-.header__two a {
-  text-decoration: none;
-  color: rgb(161, 161, 161);
-}
-
-.icon-1 a {
-  color: #f42 !important;
-}
-
-.bottom_txt a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #aaa;
-  font-size: 1rem;
-}
-
-.card__links a {
-  color: #777;
-  text-decoration: none;
-}
-
-.head_fund p,
-.head_fund a {
-  color: #f42;
-  text-decoration: none;
-}
-
-.bottom_txtd a {
-  font-weight: 600;
-  color: #555;
-  font-size: 1.2rem;
-}
-
-.top_nav a {
-  font-size: 1.3rem;
-  color: #fff;
-}
-
-header a:hover {
-  color: black;
+	color: #c5c5c5;
+	text-decoration: none;
+	font-size: 1.2rem;
 }
 
 .header__one a:hover {
-  color: #fff;
-}
-
-.card__links a:hover {
-  color: #333;
-}
-
-.header__one-nav {
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  justify-content: space-between;
-}
-
-.header__sub {
-  display: flex;
-  align-items: center;
-}
-
-.header__one-left {
-  justify-content: start;
-  width: 50rem;
-}
-
-.header__one-right {
-  justify-content: end;
-  width: 26rem;
-}
-
-.header__one-left li {
-  margin-left: 2rem;
-}
-
-.header__one-right li {
-  margin-right: 2rem;
-}
-
-.header__two {
-  width: 100%;
-  height: 5rem;
-  background-color: #fff;
-  box-shadow: 0.7rem 0 1rem rgba(0, 0, 0, 0.2);
-  justify-content: space-between;
-}
-
-.active {
-  color: #fff !important;
-}
-
-.header__two-left {
-  justify-content: start;
-}
-
-.header__two-left li {
-  margin-left: 2rem;
-  list-style: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.header__two-right {
-  margin-right: 2rem;
-}
-
-.icon {
-  font-size: 1.8rem;
-  padding: 1.6rem 0 1.6rem 1.6rem;
-  border-left: 1px solid rgb(228, 228, 228);
-}
-
-.header__three {
-  display: none;
-}
-
-.header__three-right {
-  margin-right: 2rem;
+	color: #fff;
 }
 
 .icon-1 {
-  padding: 2rem 1.6rem 1.6rem 1.6rem;
+	text-decoration: none;
+	color: #aaa;
+	padding: 2rem 1.6rem 1.6rem 1.6rem;
 }
 
-.grid {
-  display: grid;
+.icon-1 a {
+	color: #f42 !important;
 }
 
-.grid_0 {
-  grid-template-columns: 65% 35%;
-  column-gap: 1rem;
-  padding: 1.2rem;
+.header__two {
+	width: 100%;
+	height: 5rem;
+	background-color: #fff;
+	box-shadow: 0.7rem 0 1rem rgba(0, 0, 0, 0.2);
+	justify-content: space-between;
 }
 
-.grid__1 {
-  position: relative;
-  width: inherit;
-  background-image:
-    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
-    linear-gradient(to right, rgba(255, 68, 34, 0.7), rgba(0, 0, 0, 0.6)),
-    url("../images/mario.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  height: 53rem;
-  background-color: gray;
-}
-
-.main-img {
-  position: absolute;
-  top: 3rem;
-  left: 2rem;
-}
-
-.main-text {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-}
-
-.main-text-1 {
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.h-1 {
-  font-size: 3.7rem;
-  font-weight: 900;
-  color: #fff;
-  width: 80%;
-}
-
-.main-date {
-  font-size: 1.3rem;
-  color: #777;
-}
-
-.grid__21,
-.grid__22 {
-  position: relative;
-  width: 100%;
-  background-image:
-    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
-    url("../images/maserati.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 26rem;
-}
-
-.grid__21 {
-  margin-bottom: 1rem;
-  background-image:
-    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)),
-    url("../images/city-big.jpg");
-}
-
-.sub-text {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  width: 90%;
-}
-
-.sub-text-1 {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.sub-h-1 {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-
-.sub-date {
-  color: #777;
-  font-size: 1.3rem;
-}
-
-@media (max-width: 768px) {
-  .display__none {
-    display: none;
-  }
-
-  .header__three-right {
-    margin-right: 2rem;
-  }
-
-  .header__three {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0.7rem 0 1rem rgba(0, 0, 0, 0.2);
-  }
-
-  .header__three img {
-    height: 5rem;
-  }
-}
-
-/* header section ends here */
-
-/* Latest news */
-
-.center {
-  margin: 0 auto;
-  width: 113.8rem;
-}
-
-.center-card {
-  margin: 0 auto;
-  width: 100rem;
-}
-
-.latest__news {
-  padding: 10rem 0 7rem 0;
-}
-
-.latest__new-list {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 1.45rem;
-  width: 113.8rem;
-}
-
-.latest_news-img {
-  width: 27.3rem;
-  height: auto;
-}
-
-.lastest__news-title {
-  font-size: 2.4rem;
-  color: #f42;
-  margin-bottom: 1.3rem;
-}
-
-.latest_p {
-  font-weight: 800;
-  font-size: 1.4rem;
+.header__two a {
+	text-decoration: none;
+	color: #aaa;
 }
 
 .bottom_txt {
-  font-weight: 500;
-  color: #aaa;
-  font-size: 1rem;
+	font-weight: 500;
+	color: #aaa;
+	font-size: 1rem;
 }
 
-.latest_p:hover {
-  color: red;
-  text-decoration: underline;
+.bottom_txt a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #aaa;
+	font-size: 1rem;
 }
 
-.items {
-  margin: 15px 0;
-  position: relative;
+.card__links a {
+	color: #777;
+	text-decoration: none;
 }
 
-/* Latest news ends here */
-
-/* card section */
-
-.row {
-  margin-bottom: 7rem;
-}
-
-.card__container {
-  margin-top: 10rem;
-  width: 113.8rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
-}
-
-.card__title {
-  color: #f42;
-  font-size: 2.4rem;
-  margin-bottom: 1.7rem;
-  font-weight: bold;
-}
-
-.card__body-img {
-  position: relative;
-}
-
-.new_img {
-  width: 100%;
-  height: auto;
-}
-
-.new_img-over {
-  background: transparent url("../images/image-gradient.png");
-  background-size: 100% 100%;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  opacity: 0.7;
-}
-
-.card__body-sub {
-  position: relative;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-
-.card__body-text {
-  position: absolute;
-  bottom: 1.2rem;
-  left: 1.5rem;
-  width: 90%;
-  z-index: 5;
-}
-
-.card__body-text-1 {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 0.7rem;
-}
-
-.card__body-text-2 {
-  color: #fff;
-  font-size: 1.7rem;
-  font-weight: 900;
-  margin-bottom: 0.7rem;
-}
-
-.card__body-text-3 {
-  color: #aaa;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.card__latest {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9.6rem;
-  background-color: rgba(255, 68, 34, 0.06);
-}
-
-.card__latest-1 {
-  color: #f42;
-  width: 27rem;
-}
-
-.card__latest-1 * {
-  margin-left: 1rem;
-  width: 25rem;
-}
-
-.card__latest-1 h4 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 0.3rem;
-}
-
-.card__latest-1 p {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.card__latest-img {
-  height: 9.6rem;
-  width: 9.6rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.card__latest-img-1 {
-  background-image: url("../images/elon.jpg");
-}
-
-.card__latest-img-2 {
-  background-image: url("../images/fir.jpg");
-}
-
-.card__latest-img-3 {
-  background-image: url("../images/device.png");
-}
-
-.card__latest-img-4 {
-  background-image: url("../images/maserati.jpg");
-}
-
-.card__latest-img-5 {
-  background-image: url("../images/cards.png");
-}
-
-.card__latest-img-6 {
-  background-image: url("../images/lab.png");
-}
-
-.card__latest-img-7 {
-  background-image: url("../images/money.png");
-}
-
-.card__latest-img-8 {
-  background-image: url("../images/prime.jpg");
-}
-
-.card__latest-img-9 {
-  background-image: url("../images/us.jpg");
+.card__links a:hover {
+	color: #333;
 }
 
 .card__links li {
-  list-style: none;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid rgb(226, 226, 226);
+	list-style: none;
+	font-size: 1.3rem;
+	justify-content: start;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid;
+	display: flex;
+	justify-content: space-between;
 }
 
 .card__links li::before {
-  content: "\002022  ";
-  font-size: 2em;
-  color: #f42;
-  margin-right: 0.7rem;
+	content: "\002022  ";
+	font-size: 2em;
+	color: #f42;
+	margin-right: 0.7rem;
 }
-
-/* card section ends here */
-
-/* Latest funds section  starts here */
 
 .head_fund {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+	font-size: 16px;
 }
 
-.fund_c {
-  margin-bottom: 2rem;
-  position: relative;
+.head_fund p {
+	color: #f42;
+	text-decoration: none;
 }
 
-.red {
-  height: 5rem;
-  background-color: #f42;
-  text-align: center;
-  padding-top: 15px;
+.head_fund a {
+	color: #f42;
+	text-decoration: none;
 }
 
-.pink {
-  height: 5rem;
-  background-color: rgba(255, 68, 34, 0.08);
-  text-align: center;
+.head_fund a:hover {
+	color: #000;
 }
 
-.img_float {
-  height: 6rem;
-  position: absolute;
-  top: 2rem;
-  left: 1rem;
-}
-
-.latest_fund_c {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 1.45rem;
-}
-
-.p-right {
-  color: #f42;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.head_fund a:hover,
 .head_fund h2:hover {
-  color: #000;
+	color: #000;
 }
 
-.first_right {
-  margin-top: 10px;
-  font-size: 2.4rem;
-}
-
-.latest_funding {
-  margin-top: 6rem;
-}
-
-.red h4 {
-  font-family: Avalon, sans-serif;
-  font-size: 21px;
-  line-height: 1;
-  color: #fff;
-}
-
-.pink h4 {
-  font-size: 18px;
-  color: #000;
-  margin: 0 !important;
-}
-
-.pink h5 {
-  font-family: "Abel", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  font-size: 12px;
-}
-
-.items_fund {
-  background-color: #fffaf8;
-}
-
-.items_fund p {
-  font-size: 13px;
-  color: #333;
-  display: block;
-  line-height: 22px;
-}
-
-.items_fund i {
-  padding: 0 15px;
-}
-
-.last_p {
-  border-top: 1px solid rgba(255, 67, 34, 0.252);
-  padding: 1.3rem;
-  margin-top: 1.3rem;
-}
-
-/* Latest Funding section Ends here */
-
-/* Latest deals */
-
-.deals-img {
-  max-width: inherit;
-}
-
-.latest_deals-img {
-  max-width: 100%;
-}
-
-.deals_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.lastest__more_deals {
-  font-size: 1.4rem;
-  color: #f42;
-}
-
-.overlay_deals {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url("../images/deals-ribbon.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 8rem;
-  width: 8rem;
-  z-index: 99;
-  margin-left: 170px;
-}
-
-.overlay_deals h3 {
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin: 25px 0 0 30px;
-  font-weight: 900;
+.bottom_txtd a {
+	font-weight: 600;
+	color: #555;
+	font-size: 1.2rem;
 }
 
 .bottom_txtd del {
-  font-size: 1.1rem;
-  padding: 5px;
-  color: #aaa;
+	font-size: 1.1rem;
+	padding: 5px;
+	color: #aaa;
 }
 
-.icones {
-  background-color: #131313;
-  width: 100%;
-  height: 15rem;
-  padding-top: 20px;
-}
-
-.icones ul {
-  display: flex;
-  justify-content: center;
-}
-
-.icones li {
-  list-style: none;
+.top_nav a {
+	font-size: 1.3rem;
+	color: #fff;
 }
 
 .top_nav li {
-  margin: 15px;
-  padding: 15px 17px;
-  background-color: #333;
-  border-radius: 50%;
-  border: 1px solid rgba(129, 124, 124, 0);
+	margin: 15px;
+	padding: 15px 17px;
+	background-color: #333;
+	border-radius: 50%;
+	border: 1px solid rgba(129, 124, 124, 0);
 }
 
 .top_nav li:hover {
-  background-color: black;
-  border: 1px solid rgba(129, 124, 124, 0.247);
+	background-color: #000;
+	border: 1px solid rgba(129, 124, 124, 0.247);
 }
 
-.bottomer img {
-  width: 4.5rem;
+header a:hover {
+	color: #000;
+}
+
+.header__one-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+}
+
+.header__sub {
+	display: flex;
+	align-items: center;
+}
+
+.header__one-left {
+	justify-content: start;
+	width: 50rem;
+}
+
+.header__one-left li {
+	margin-left: 2rem;
+}
+
+.header__one-right {
+	justify-content: end;
+	width: 26rem;
+}
+
+.header__one-right li {
+	margin-right: 2rem;
+}
+
+.active {
+	color: #fff !important;
+}
+
+.header__two-left {
+	justify-content: start;
+}
+
+.header__two-left li {
+	margin-left: 2rem;
+	list-style: none;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.header__two-right {
+	margin-right: 2rem;
+}
+
+.icon {
+	font-size: 1.8rem;
+	padding: 1.6rem 0 1.6rem 1.6rem;
+	border-left: 1px solid #e4e4e4;
+}
+
+.header__three {
+	display: none;
+}
+
+.header__three-right {
+	margin-right: 2rem;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid_0 {
+	grid-template-columns: 65% 35%;
+	column-gap: 1rem;
+	padding: 1.2rem;
+}
+
+.grid__1 {
+	position: relative;
+	width: inherit;
+	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), linear-gradient(to right, rgba(255, 68, 34, 0.7), rgba(0, 0, 0, 0.6)), url("../images/mario.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+	height: 53rem;
+	background-color: gray;
+}
+
+.main-img {
+	position: absolute;
+	top: 3rem;
+	left: 2rem;
+}
+
+.main-text {
+	position: absolute;
+	left: 2rem;
+	bottom: 2rem;
+}
+
+.main-text-1 {
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.h-1 {
+	font-size: 3.7rem;
+	font-weight: 900;
+	color: #fff;
+	width: 80%;
+}
+
+.main-date {
+	font-size: 1.3rem;
+	color: #777;
+}
+
+.grid__21 {
+	position: relative;
+	width: 100%;
+	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), url("../images/maserati.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 26rem;
+	margin-bottom: 1rem;
+}
+
+.grid__22 {
+	position: relative;
+	width: 100%;
+	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), url("../images/maserati.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 26rem;
+}
+
+.sub-text {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	width: 90%;
+}
+
+.sub-text-1 {
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.sub-h-1 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 900;
+}
+
+.sub-date {
+	color: #777;
+	font-size: 1.3rem;
+}
+
+.center {
+	margin: 0 auto;
+	width: 113.8rem;
+}
+
+.center-card {
+	margin: 0 auto;
+	width: 100rem;
+}
+
+.latest__news {
+	padding: 10rem 0 7rem 0;
+}
+
+.latest__new-list {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 1.45rem;
+	width: 113.8rem;
+}
+
+.latest_news-img {
+	width: 27.3rem;
+	height: auto;
+}
+
+.lastest__news-title {
+	font-size: 2.4rem;
+	color: #f42;
+	margin-bottom: 1.3rem;
+}
+
+.latest_p {
+	font-weight: 800;
+	font-size: 1.4rem;
+}
+
+.latest_p:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.items {
+	margin: 15px 0;
+	position: relative;
+}
+
+.row {
+	margin-bottom: 7rem;
+}
+
+.card__container {
+	margin-top: 10rem;
+	width: 113.8rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 2rem;
+}
+
+.card__title {
+	color: #f42;
+	font-size: 2.4rem;
+	margin-bottom: 1.7rem;
+	font-weight: bold;
+}
+
+.card__body-img {
+	position: relative;
+}
+
+.new_img {
+	width: 100%;
+	height: auto;
+}
+
+.new_img-over {
+	background: transparent url("../images/image-gradient.png");
+	background-size: 100% 100%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	opacity: 0.7;
+}
+
+.card__body-sub {
+	position: relative;
+	height: auto;
+	margin-bottom: 0.5rem;
+}
+
+.card__body-text {
+	position: absolute;
+	bottom: 1.2rem;
+	left: 1.5rem;
+	width: 90%;
+	z-index: 5;
+}
+
+.card__body-text-1 {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 0.7rem;
+}
+
+.card__body-text-2 {
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight: 900;
+	margin-bottom: 0.7rem;
+}
+
+.card__body-text-3 {
+	color: #aaa;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.card__latest {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 9.6rem;
+	background-color: rgba(255, 68, 34, 0.06);
+}
+
+.card__latest-1 {
+	color: #f42;
+	width: 27rem;
+}
+
+.card__latest-1 * {
+	margin-left: 1rem;
+	width: 25rem;
+}
+
+.card__latest-1 h4 {
+	font-size: 1.6rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 0.3rem;
+}
+
+.card__latest-1 p {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.card__latest-img {
+	height: 9.6rem;
+	width: 9.6rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.card__latest-img-1 {
+	background-image: url("../images/elon.jpg");
+}
+
+.card__latest-img-2 {
+	background-image: url("../images/fir.jpg");
+}
+
+.card__latest-img-3 {
+	background-image: url("../images/device.png");
+}
+
+.card__latest-img-4 {
+	background-image: url("../images/maserati.jpg");
+}
+
+.card__latest-img-5 {
+	background-image: url("../images/cards.png");
+}
+
+.card__latest-img-6 {
+	background-image: url("../images/lab.png");
+}
+
+.card__latest-img-7 {
+	background-image: url("../images/money.png");
+}
+
+.card__latest-img-8 {
+	background-image: url("../images/prime.jpg");
+}
+
+.card__latest-img-9 {
+	background-image: url("../images/us.jpg");
+}
+
+.fund_c {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.red {
+	height: 5rem;
+	background-color: #f42;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.red h4 {
+	font-family: Avalon, sans-serif;
+	font-size: 21px;
+	line-height: 1;
+	color: #fff;
+}
+
+.pink {
+	height: 5rem;
+	background-color: rgba(255, 68, 34, 0.08);
+	text-align: center;
+}
+
+.pink h4 {
+	font-size: 18px;
+	color: #000;
+	margin: 0 !important;
+}
+
+.pink h5 {
+	font-family: "Abel", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	line-height: 1.5;
+	font-size: 12px;
+}
+
+.img_float {
+	height: 6rem;
+	position: absolute;
+	top: 2rem;
+	left: 1rem;
+}
+
+.latest_fund_c {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 1.45rem;
+}
+
+.p-right {
+	color: #f42;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.first_right {
+	margin-top: 10px;
+	font-size: 2.4rem;
+}
+
+.latest_funding {
+	margin-top: 6rem;
+}
+
+.items_fund {
+	background-color: #fffaf8;
+}
+
+.items_fund p {
+	font-size: 13px;
+	color: #333;
+	display: block;
+	line-height: 22px;
+}
+
+.items_fund i {
+	padding: 0 15px;
+}
+
+.last_p {
+	border-top: 1px solid rgba(255, 67, 34, 0.252);
+	padding: 1.3rem;
+	margin-top: 1.3rem;
+}
+
+.deals-img {
+	max-width: inherit;
+}
+
+.latest_deals-img {
+	max-width: 100%;
+}
+
+.deals_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lastest__more_deals {
+	font-size: 1.4rem;
+	color: #f42;
+}
+
+.overlay_deals {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url("../images/deals-ribbon.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 8rem;
+	width: 8rem;
+	z-index: 99;
+	margin-left: 170px;
+}
+
+.overlay_deals h3 {
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin: 25px 0 0 30px;
+	font-weight: 900;
+}
+
+.icones {
+	background-color: #131313;
+	width: 100%;
+	height: 15rem;
+	padding-top: 20px;
+}
+
+.icones ul {
+	display: flex;
+	justify-content: center;
+}
+
+.icones li {
+	list-style: none;
 }
 
 .bottomer {
-  width: 100%;
-  background-color: black;
+	width: 100%;
+	background-color: #000;
+}
+
+.bottomer img {
+	width: 4.5rem;
 }
 
 .bottomer p {
-  text-align: center;
-  padding: 3rem 1rem;
-  color: #fff;
-  font-size: 1.4rem;
+	text-align: center;
+	padding: 3rem 1rem;
+	color: #fff;
+	font-size: 1.4rem;
 }
 
 .last_img img {
-  width: 7rem;
+	width: 7rem;
+}
+
+@media (max-width: 768px) {
+	.display__none {
+		display: none;
+	}
+
+	.header__three-right {
+		margin-right: 2rem;
+	}
+
+	.header__three {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow: 0.7rem 0 1rem rgba(0, 0, 0, 0.2);
+	}
+
+	.header__three img {
+		height: 5rem;
+	}
 }
