@@ -267,7 +267,6 @@ header a:hover {
   background-position: center;
   height: 26rem;
   margin-bottom: 1rem;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)), url("../images/city-big.jpg");
 }
 .grid__22 {
   position: relative;
